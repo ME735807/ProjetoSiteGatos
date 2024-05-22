@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gatos</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="intro">
+                    <img src="image/gatinhos.jpg" alt="cats image">
+                </div>
+                <div class="personname">
+                    <form id="question">
+                        <label for="name">What is your name?</label>
+                        <input type="text" id="name" name="name" required>
+                        <button type="button" class="button primary" id="btconfirm">Confirm</button>
+                    </form>
+                </div>
+                <div id="message"></div>
+            </div>
+        </header>
+        <main>
+            <section class="intro gray">
+                <div class = "container">
+                    <h1>Meet my <strong>cats</strong> and their personality!</h1>
+                    <p>See how <strong>unique</strong> and <strong>special</strong> they are!</p>
+                    <div class="cta">
+                        <a href="https://youtu.be/tpiyEe_CqB4?si=0aaJ2PyhKNQQnHh_" class="button primary">Cute cats videos</a>
+                        <a href="https://drive.google.com/drive/folders/1yEd8xvS0x2ZqZ0S3vaIk1JNHgeIPywhs?usp=drive_link" class="button secondary">Drive with their photos</a>
+                    </div>
+                </div>
+            </section>
+            <section class="gatos">
+                <div class = "container">
+                    <h1 class = "title">My cats</h1>
+                    <div class="members">
+                        <div class="member">
+                            <img src="image/robertinha.jpg" alt="Roberta Contri">
+                                <p>This is my daughter Roberta, but her nickname is robertinha(most popular)</p>
+                        </div>
+                        <div class="member">
+                            <img src="image/Nescau.jpg" alt="Nescau Contri">
+                                <p>This is Nescau, he loves to play with his toys.</p>
+                        </div>
+                        <div class="member">
+                            <img src="image/xuxa.jpg" alt="Xuxa Contri">
+                                <p>This is Xuxa, she is the queen of the house.</p>
+                        </div>
+                        <div class="member">
+                            <img src="image/pandora.jpg" alt="Pandora Contri">
+                                <p>This is Pandora, she is very curious and loves to explore.</p>
+                        </div>
+                        <div class="member">
+                            <img src="image/Rajadinha.jpg" alt="Rajadinha Contri">
+                                <p>This is Rajadinha, the most affectionate of them all.</p>
+                        </div>                
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class = "container">
+                <div class = "informs">
+                    <br>
+                        <h1>Which one of my cats did you like the most? Tell me!</h1>
+                        <input type="checkbox" name="Roberta" value="sim">Roberta
+                        <br>
+                        <input type="checkbox" name="Nescau" value="sim">Nescau
+                        <br>
+                        <input type="checkbox" name="Xuxa" value="sim">Xuxa
+                        <br>
+                        <input type="checkbox" name="Pandora" value="sim">Pandora
+                        <br>
+                        <input type="checkbox" name="Rajadinha" value="sim">Rajadinha
+                    <br>
+                        <h1>Do you have any pet?</h1> <!--ao trocarmos h1 por span o input eh colocado a frente da escrita-->
+                        <input type="radio" name="pet" value="sim" checked> Yes
+                        <input type="radio" name="pet" value="nao" checked> No
+                        <input type="radio" name="pet" value="nao" checked> No, but I wish I had
+                        <br>
+                        <textarea name="comment" rows="5" cols="30" id="informarea" placeholder="Tell me more about you and your pet(if you have one)"></textarea>     
+                        <button type="button" class="button secondary" id="btsend">Send</button>              
+                </div>
+                <div id="incredible"></div> 
+            </div>
+            <div class = container >
+                <ul>        
+                    <li>
+                        <div class = "about"><a href="#">Instagram</a></div>
+                    </li>
+                    <li>
+                        <div class = "about"><a href="#">GitHub</a></div>
+                    </li>
+                </ul>
+                <p>
+                    Creator: Maria Eduarda Nogueira Contri 
+                </p>
+            </div>               
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

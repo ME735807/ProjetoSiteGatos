@@ -1,0 +1,225 @@
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+	background: linear-gradient(-45deg, #fae5c5, #c6c1ec, #95ddff, #daa5fd);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.intro img{
+    width: 400px;
+}
+
+.personname {
+    display: flex;
+    flex-direction: column;
+}
+
+.personname button {
+    border: none;
+}
+
+input[type="text"],
+textarea {
+    width: 250px; /* Aumenta a largura */
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Cor de borda mais visível */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna leve */
+    font-family: 'Roboto', sans-serif; /* Garantir que a fonte seja Roboto */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave para o foco */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #80bdff; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(33, 38, 44, 0.5); /* Sombra ao focar */
+    outline: none; /* Remover outline padrão */
+}
+
+section {
+    padding: 3rem 0 4rem 0;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(7, 7, 7);
+}
+
+
+
+h1.title {
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gray {
+    background-color: #1d1d1d;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.informs h1{
+    margin-bottom: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.intro h1{
+    color: aliceblue;
+}
+.intro p{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: aliceblue;
+}
+
+.intro question {
+    margin: 2rem 0;
+}
+
+.button {
+    background-color: rgb(160, 160, 201);
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.button:hover {
+    background-color: #c6c1ec;
+    box-shadow: 0 5px 10px 0 #ffffff80;
+}
+
+.primary {
+    background-color: rgb(141, 191, 238);
+    color: white;
+}
+
+.secondary {
+    background-color: rgb(156, 162, 247);
+    color: #444;
+}
+
+
+.title {
+    padding-bottom: 45px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+.member {
+    display: flex;
+    align-items: flex-start; /* Alinha verticalmente os itens */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+
+.member p {
+    font-size: 1.2rem;
+    max-width: 600px; /* Define uma largura máxima para o texto */
+}
+
+footer {
+    background-color: #dbb583;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    padding: 2rem 2rem;
+    color: white;
+    text-align: center;
+}
+/* Adicione este estilo ao seu arquivo CSS */
+.checkbox-container input[type="checkbox"],
+.radio-container input[type="radio"] {
+    transform: scale(40); /* Ajuste o valor conforme necessário para aumentar o tamanho */
+    margin-right: 10px; /* Espaçamento entre os checkbox e radio buttons */
+}
+
+.checkbox-container label,
+.radio-container label {
+    font-size: 70px; /* Tamanho da fonte do texto ao lado dos checkbox e radio buttons */
+}
+
+.informs{
+    text-align: flex-start;
+}
